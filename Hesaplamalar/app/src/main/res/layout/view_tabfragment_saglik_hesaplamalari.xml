@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnVKI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vücut Kitle Endeksi Hesaplama" />
+
+    <Button
+        android:id="@+id/btnYasHesaplama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yaş Hesaplama" />
+    <Button
+        android:id="@+id/btnSigaraMaliyetiHesaplama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sigara  Maliyeti Hesaplama" />
+</LinearLayout>

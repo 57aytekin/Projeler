@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".Activity.Kdv_HesaplamaActivity">
+
+    <EditText
+        android:id="@+id/etKdvMatrah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="17500"
+        android:inputType="textPersonName" />
+
+    <RadioGroup
+        android:id="@+id/rdGrup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etKdvMatrah"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="14dp">
+
+        <RadioButton
+            android:id="@+id/rdBtnKdv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="%1 KDV" />
+
+        <RadioButton
+            android:id="@+id/rdBtnKdv8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="%8 KDV" />
+
+        <RadioButton
+            android:id="@+id/rdBtnKdv18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="%18 KDV" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/btnKdvHesap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Kdv Hesapla"
+        android:layout_below="@id/rdGrup"/>
+
+    <TextView
+        android:id="@+id/tvKdvSonuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnKdvHesap"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="--" />
+</RelativeLayout>

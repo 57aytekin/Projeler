@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "827549961102",
+    "firebase_url": "https://kan-bagisi-1d73a.firebaseio.com",
+    "project_id": "kan-bagisi-1d73a",
+    "storage_bucket": "kan-bagisi-1d73a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827549961102:android:d8026f4fde64e0af",
+        "android_client_info": {
+          "package_name": "com.aytekincomez.kanbagisiapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "827549961102-nm9qlv3gatrem4qlaqdnbr3odegla6fv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aytekincomez.kanbagisiapp",
+            "certificate_hash": "7de36b3690ef1ef06e0ec0db994e8d67aa8faf37"
+          }
+        },
+        {
+          "client_id": "827549961102-5he53dn8o7npg316tf43s6shqqfbu59u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjuAs9kKPgR75oY0uU-Iq7lQZNZvZeOaY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "827549961102-5he53dn8o7npg316tf43s6shqqfbu59u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

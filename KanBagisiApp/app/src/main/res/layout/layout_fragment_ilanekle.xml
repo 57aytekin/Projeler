@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/srollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnFragmentYayinla"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etFragmentIlanEkleAd"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Ad"
+                android:inputType="textEmailAddress"
+                android:textColor="#000000"
+                android:textColorHint="#949393" />
+
+            <EditText
+                android:id="@+id/etFragmentIlanEkleSoyad"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etFragmentIlanEkleAd"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Soyad"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textColorHint="#949393" />
+
+            <EditText
+                android:id="@+id/etFragmentIlanEkleKanGrubu"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etFragmentIlanEkleSoyad"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Kan Grubu"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textColorHint="#949393" />
+
+            <EditText
+                android:id="@+id/etFragmentIlanEkleIl"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etFragmentIlanEkleKanGrubu"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="İl"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textColorHint="#949393" />
+
+            <EditText
+                android:id="@+id/etFragmentIlanEkleIlce"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etFragmentIlanEkleIl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="İlçe"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textColorHint="#949393" />
+
+            <EditText
+                android:id="@+id/etFragmentIlanEkleHastaneAdi"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etFragmentIlanEkleIlce"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Hastane Adı"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textColorHint="#949393" />
+
+            <EditText
+                android:id="@+id/etFragmentIlanEkleTel"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etFragmentIlanEkleHastaneAdi"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Telefon No"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHint="#949393" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnFragmentYayinla"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_style_ilanekle"
+        android:text="Yayınla" />
+</RelativeLayout>

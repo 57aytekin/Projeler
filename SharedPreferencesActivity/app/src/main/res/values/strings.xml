@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SharedPreferencesActivity</string>
+    <string-array name="lang">
+        <item>Türkçe</item>
+        <item>İngilizce</item>
+        <item>Arapça</item>
+        <item>Fransızca</item>
+        <item></item>
+    </string-array>
+    <string-array name="langValues">
+        <item>tr</item>
+        <item>en</item>
+        <item>ar</item>
+        <item>fr</item>
+    </string-array>
+</resources>

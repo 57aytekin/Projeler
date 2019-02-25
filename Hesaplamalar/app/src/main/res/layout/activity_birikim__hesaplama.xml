@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".Activity.Birikim_HesaplamaActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Mevcut Birikim Tutarı "
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/etBirikimTutari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="12000"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etBirikimTutari"
+        android:layout_marginTop="10dp"
+        android:text="Haftalık Birikim"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/etHaftalikBirikim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="50"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/etHaftalikBirikim"
+        android:layout_marginTop="10dp"
+        android:text="Birikim Süresi(Hafta)"
+        android:textSize="22sp" />
+
+    <NumberPicker
+        android:id="@+id/npBirikimHafta"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView3" />
+
+    <Button
+        android:id="@+id/btnBirikimiHesapla"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/npBirikimHafta"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/npBirikimHafta"
+        android:text="Birikimi Hesapla" />
+
+    <TextView
+        android:id="@+id/tvBirikimSonuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnBirikimiHesapla"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="TextView"
+        android:textSize="24sp" />
+</RelativeLayout>

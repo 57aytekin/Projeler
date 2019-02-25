@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_above="@id/liearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:weightSum="5"
+        android:layout_alignParentBottom="true"
+        android:background="#c6c4c4">
+
+        <ImageView
+            android:id="@+id/ivHome"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher"
+            app:srcCompat="@drawable/home_grey" />
+
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher_round"
+            app:srcCompat="@drawable/icon_search_grey" />
+
+        <ImageView
+            android:id="@+id/ivTakePhoto"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher_round"
+            app:srcCompat="@drawable/icon_share_grey" />
+
+        <ImageView
+            android:id="@+id/ivFavories"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher"
+            app:srcCompat="@drawable/heart_grey" />
+
+        <ImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher"
+            app:srcCompat="@drawable/icon_profile_grey" />
+    </LinearLayout>
+
+</RelativeLayout>

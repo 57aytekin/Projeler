@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/arkaplanRengi"
+    tools:context=".AyarlarActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Uygulama Bildirimleri" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@id/textView"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:id="@+id/bildirimYok"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/radioGroup"
+            android:text="Asla Bildirim Gösterme" />
+
+        <RadioButton
+            android:id="@+id/bildirimHerSaat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@+id/radioGroup"
+            android:layout_alignTop="@+id/radioGroup"
+            android:text="Her Saat Bildirim Göster" />
+        <RadioButton
+            android:id="@+id/bildirimHerYarimSaat"
+            android:text="Yarım Saatte Bir"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignStart="@+id/textView"
+        android:text="Ek Seçenekler" />
+
+    <CheckBox
+        android:id="@+id/chkBeniHatirla"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView"
+        android:text="Kullanıcı Adımı ve Şifremi Hatırla" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chkBeniHatirla"
+        android:layout_alignStart="@+id/textView"
+        android:textSize="24sp"
+        android:layout_marginTop="30dp"
+        android:text="Ayarlar" />
+
+    <EditText
+        android:id="@+id/etAyarlarKullaniciAdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/textView"
+        android:ems="10"
+        android:hint="Adınız Soyadınız"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnAyarlarKaydet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_style1"
+        android:layout_below="@+id/etAyarlarKullaniciAdi"
+        android:layout_alignStart="@+id/textView"
+        android:text="Tüm Ayarları Kaydet" />
+
+</RelativeLayout>

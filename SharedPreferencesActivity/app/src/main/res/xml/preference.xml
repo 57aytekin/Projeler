@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Kategori 1">
+
+        <CheckBoxPreference
+            android:title="İlk Seçenek"
+            android:key="ilk"
+            android:summary="İlk Eleman">
+        </CheckBoxPreference>
+
+        <EditTextPreference
+            android:title="İkinci Seçenek"
+            android:key="isim"
+            android:summary="Adınızı giriniz">
+
+        </EditTextPreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Kategori 2">
+        <ListPreference
+            android:key="diller"
+            android:title="Dil"
+            android:entries="@array/lang"
+            android:entryValues="@array/langValues"/>
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="example_switch"
+            android:summary="Açıklama"
+            android:title="Baslik"/>
+    </PreferenceCategory>
+</PreferenceScreen>

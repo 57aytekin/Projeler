@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aytekincomez.findtrue.MainActivity">
+
+    <ImageView
+        android:id="@+id/bulB1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bul"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="44dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:id="@+id/bulB2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bul"
+        app:layout_constraintTop_toTopOf="@+id/bulB1"
+        android:layout_marginTop="0dp"
+        app:layout_constraintLeft_toRightOf="@+id/bulB1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/bulB3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bul"
+        app:layout_constraintBottom_toBottomOf="@+id/bulB4"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintTop_toTopOf="@+id/bulB4"
+        android:layout_marginTop="0dp"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/bulB2"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="@+id/bulB2" />
+
+    <ImageView
+        android:id="@+id/bulB4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bul"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/bulB1"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/bulB1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.321" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="0dp"
+        android:onClick="changeImage1"
+        android:text="Change"
+        android:visibility="visible"
+        app:layout_constraintLeft_toRightOf="@+id/button2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="0dp"
+        android:onClick="changeImage"
+        android:text="Change"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/bulB4"
+        app:layout_constraintLeft_toLeftOf="@+id/bulB1"
+        app:layout_constraintTop_toBottomOf="@+id/bulB1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="0dp"
+        android:onClick="changeImage3"
+        android:text="Change"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/button4"
+        app:layout_constraintLeft_toRightOf="@+id/button4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="0dp"
+        android:onClick="changeImage2"
+        android:text="Change"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/bulB4"
+        app:layout_constraintTop_toBottomOf="@+id/bulB4"
+        app:layout_constraintVertical_bias="0.0" />
+</android.support.constraint.ConstraintLayout>
+

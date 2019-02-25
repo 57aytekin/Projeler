@@ -1,0 +1,23 @@
+﻿<kurslar>
+	<kurs>
+		<ad>Android İle Programlama</ad>
+		<saatSayisi>192</saatSayisi>
+		<egitmen>Şerif Güngör</egitmen>
+		<kontenjan>16</kontenjan>
+	</kurs>
+
+	<kurs>
+		<ad>Java Enterprise Edition</ad>
+		<saatSayisi>160</saatSayisi>
+		<egitmen>Egitmen Adi</egitmen>
+		<kontenjan>16</kontenjan>
+	</kurs>
+
+	<kurs>
+		<ad>C# ile GÖrsel Programlama</ad>
+		<saatSayisi>216</saatSayisi>
+		<egitmen>Egitmen Adi</egitmen>
+		<kontenjan>20</kontenjan>
+	</kurs>
+
+</kurslar>

@@ -1,0 +1,3 @@
+﻿Android ile mobil programlama dersindeyim.
+
+Şuan yaptıgım ornek assest klasoru icisinde bulunan metin belgesi içerigini okumak.

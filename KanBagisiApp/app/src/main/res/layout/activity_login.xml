@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backgroundcolor"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LoginActivity">
+
+    <TextView
+        android:id="@+id/tvLoginLogo"
+        android:layout_marginTop="10dp"
+        android:layout_width="180dp"
+        android:layout_height="46dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/carter_one"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/etLoginEmail"
+        android:layout_marginTop="70dp"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLoginLogo"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:hint="E-Mail"
+        android:textColorHint="#949393"
+        android:gravity="center"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etLoginSifre"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etLoginEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#949393" />
+
+    <Button
+        android:id="@+id/btnLoginGirisYap"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/etLoginSifre"
+        android:layout_alignStart="@+id/etLoginEmail"
+        android:background="@drawable/button_style"
+        android:text="Giriş Yap" />
+
+    <Button
+        android:id="@+id/btnLoginUyeOl"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/etLoginSifre"
+        android:layout_alignEnd="@id/etLoginSifre"
+        android:background="@drawable/button_style"
+        android:text="Üye Ol" />
+
+
+    <com.shaishavgandhi.loginbuttons.GoogleButton
+        android:id="@+id/btnSignIngoogle"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/buttonFacebookLogin"
+        android:layout_centerHorizontal="true"
+        android:text="Sign Ih With Google"
+        android:textColor="#181818"
+        app:iconPadding = "-5dp"
+        app:iconCenterAligned = "false"
+        app:roundedCorner = "true"
+        app:roundedCornerRadius ="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="50dp" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/buttonFacebookLogin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:onClick="buttonClickLoginFb"
+        android:layout_above="@+id/ivCLoseIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+    <ImageView
+        android:id="@+id/ivCLoseIcon"
+        app:srcCompat="@drawable/closeicon"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
